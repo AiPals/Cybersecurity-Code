@@ -76,14 +76,12 @@ Please ensure that all contributions align with the purpose of the project and r
 
 ---
 
-#### **6. License**
+6. License
 ```markdown
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more information.
 
 7. Disclaimer
-
-## Disclaimer
 
 This project is for educational and testing purposes only. Unauthorized use of this tool for malicious purposes is strictly prohibited. The author is not responsible for any misuse or illegal activities involving this code.
