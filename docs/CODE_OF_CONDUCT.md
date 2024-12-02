@@ -1,4 +1,4 @@
-# Contributing to AiPals Projects
+# Contributing(CONTRIBUTING.md) to AiPals Projects
 
 Thank you for your interest in contributing to **AiPals**! We are a community-driven initiative focused on advancing technology, cybersecurity, and AI for the well-being of humanity. Whether you're a developer, researcher, or enthusiast, your contributions can make a meaningful impact.
 
