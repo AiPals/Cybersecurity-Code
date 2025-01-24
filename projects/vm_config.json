@@ -1,0 +1,47 @@
+{
+  "name": "kali-linux-vm",
+  "type": "compute.v1.instance",
+  "properties": {
+    "zone": "us-central1-a",
+    "machineType": "zones/us-central1-a/machineTypes/e2-standard-4",
+    "disks": [
+      {
+        "boot": true,
+        "initializeParams": {
+          "sourceImage": "projects/kali-linux-cloud/global/images/kali-linux-rolling",
+          "diskSizeGb": 50
+        }
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "network": "global/networks/default",
+        "accessConfigs": [
+          {
+            "name": "External NAT",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "items": [
+        {
+          "key": "startup-script",
+          "value": "#!/bin/bash\nsudo apt update && sudo apt install -y python3 python3-pip aircrack-ng bettercap tcpdump\npip3 install rich"
+        }
+      ]
+    },
+    "tags": {
+      "items": ["kali", "network-scanner"]
+    },
+    "serviceAccounts": [
+      {
+        "email": "default",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform"
+        ]
+      }
+    ]
+  }
+}
